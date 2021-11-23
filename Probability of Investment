@@ -22,8 +22,8 @@ high_prob = fuzz.trimf(prob, [50, 75, 101])
 fig, (ax0, ax1, ax2) = plt.subplots(nrows=3, figsize=(7, 7))
 
 ax0.plot(roe, bad_roe, 'b', linewidth=1.5, label='Bad')
-ax0.plot(roe, good_roe, 'r', linewidth=1.5, label='Good')
-ax0.plot(roe, risky_roe, 'y', linewidth=1.5, label='Risky')
+ax0.plot(roe, good_roe, 'r', linewidth=1.5, label='Optimal')
+ax0.plot(roe, risky_roe, 'y', linewidth=1.5, label='Precarious')
 ax0.set_ylabel('Degree of membership')
 ax0.set_xlabel('ROE')
 ax0.legend()
@@ -120,4 +120,3 @@ for ax in (ax0, ax1, ax2):
 plt.tight_layout()
 
 plt.show()
-
